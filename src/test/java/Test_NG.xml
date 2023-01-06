@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Todo Application" verbose="1">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="version" value="11.2"></parameter>
+        <test name=" Test3">
+            <classes>
+                <class name="Test_Parameter"/>
+
+            </classes>
+        </test>
+
+    <test name=" Test1">
+        <classes>
+            <class name="Main"/>
+            <class name="NameTest1"/>
+            <class name="NameTest2"/>
+            <class name="Main2"/>
+        </classes>
+    </test>
+    <test name="Test2">
+        <classes>
+
+            <class name="IN_EX">
+            <methods>
+                <exclude name=" be_Should_return_Name_if_not_contain_special_charachter"></exclude>
+               <include name="A"></include>
+            </methods>
+
+            </class>
+            <class name="Main2"/>
+        </classes>
+    </test>
+</suite>
